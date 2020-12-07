@@ -15,6 +15,16 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <form action="{{ route('update-dob') }}" method="post">
+                        @csrf
+                        <div class="form-group col-md-3">
+                            <label for="dob">Date of birth</label>
+                            <input class="form-control" type="date" name="dob" id="">
+                        </div>
+                        <button class="btn btn-secondary" type="submit">Save</button>
+                    </form>
+                    <a href="/birthday" class="btn btn-primary">Send Birthday Message</a>
                 </div>
             </div>
         </div>
