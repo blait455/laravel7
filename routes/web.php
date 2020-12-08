@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/dob', 'HomeController@update')->name('update-dob');
 Route::get('/birthday', 'HomeController@birthday');
+Route::get('/charts', 'ChartController@index')->name('charts');
